@@ -1,0 +1,179 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/17.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/3.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/4.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/5.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/6.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/7.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/8.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/9.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/10.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/11.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/12.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/14.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Tileset/Jungle/png/Tiles/15.png" type="Texture" id=14]
+[ext_resource path="res://probs/agua.tscn" type="PackedScene" id=15]
+[ext_resource path="res://probs/chao.tscn" type="PackedScene" id=16]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 58.7863, 44.4666 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 62.1272, 61.0473 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 64.8156, 45.9739 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 61.801, 47.4812 )
+
+[node name="tilesJungle" type="Node2D"]
+
+[node name="agua2" type="Area2D" parent="."]
+editor/display_folded = true
+position = Vector2( 342.166, -13.5661 )
+
+[node name="shape" type="CollisionShape2D" parent="agua2"]
+shape = SubResource( 1 )
+
+[node name="sprite" type="Sprite" parent="agua2"]
+texture = ExtResource( 1 )
+
+[node name="chao2" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 179.486, 476.386 )
+
+[node name="shape" type="CollisionShape2D" parent="chao2"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao2"]
+texture = ExtResource( 2 )
+
+[node name="chao3" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 403.967, 176.359 )
+
+[node name="shape" type="CollisionShape2D" parent="chao3"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao3"]
+texture = ExtResource( 3 )
+
+[node name="chao4" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 403.967, 176.359 )
+
+[node name="shape" type="CollisionShape2D" parent="chao4"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao4"]
+texture = ExtResource( 4 )
+
+[node name="chao5" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 403.967, 176.359 )
+
+[node name="shape" type="CollisionShape2D" parent="chao5"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao5"]
+texture = ExtResource( 5 )
+
+[node name="chao6" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 403.967, 176.359 )
+
+[node name="shape" type="CollisionShape2D" parent="chao6"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao6"]
+texture = ExtResource( 6 )
+
+[node name="chao7" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 403.967, 176.359 )
+
+[node name="shape" type="CollisionShape2D" parent="chao7"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao7"]
+texture = ExtResource( 7 )
+
+[node name="chao8" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 403.967, 176.359 )
+
+[node name="shape" type="CollisionShape2D" parent="chao8"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao8"]
+texture = ExtResource( 8 )
+
+[node name="chao9" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 403.967, 176.359 )
+
+[node name="shape" type="CollisionShape2D" parent="chao9"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao9"]
+texture = ExtResource( 9 )
+
+[node name="chao10" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 403.967, 176.359 )
+
+[node name="shape" type="CollisionShape2D" parent="chao10"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao10"]
+texture = ExtResource( 10 )
+
+[node name="chao11" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 403.967, 176.359 )
+
+[node name="shape" type="CollisionShape2D" parent="chao11"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao11"]
+texture = ExtResource( 11 )
+
+[node name="chao12" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 571.282, 244.189 )
+
+[node name="shape" type="CollisionShape2D" parent="chao12"]
+shape = SubResource( 2 )
+
+[node name="sprite" type="Sprite" parent="chao12"]
+position = Vector2( -1.50732, 0 )
+texture = ExtResource( 12 )
+
+[node name="chao13" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( -128.124, 49.7422 )
+
+[node name="sprite" type="Sprite" parent="chao13"]
+texture = ExtResource( 13 )
+
+[node name="shape" type="CollisionShape2D" parent="chao13"]
+shape = SubResource( 3 )
+
+[node name="chao14" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( -25.6248, 260.77 )
+
+[node name="shape" type="CollisionShape2D" parent="chao14"]
+shape = SubResource( 4 )
+
+[node name="sprite" type="Sprite" parent="chao14"]
+texture = ExtResource( 14 )
+
+[node name="agua" parent="." instance=ExtResource( 15 )]
+
+[node name="chao" parent="." instance=ExtResource( 16 )]
+position = Vector2( 271.41, 651.579 )
+scale = Vector2( 0.709909, 0.799999 )
