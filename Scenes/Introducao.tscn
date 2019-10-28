@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://probs/bg_menu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://probs/player_plane.tscn" type="PackedScene" id=2]
+[ext_resource path="res://probs/txt.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/txt.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Fonts/Doubledecker DEMO.otf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+font_data = SubResource( 1 )
+
+[node name="Introducao" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource( 1 )]
+position = Vector2( 544.891, 321.414 )
+
+[node name="player_plane" parent="." instance=ExtResource( 2 )]
+position = Vector2( 115.654, 242.916 )
+scale = Vector2( 0.29416, 0.282794 )
+
+[node name="txt" parent="." instance=ExtResource( 3 )]
+margin_left = -3.18533
+margin_top = 537.364
+margin_right = 1020.81
+margin_bottom = 6054.36
+custom_colors/font_color = Color( 0.0392157, 0.152941, 0.4, 1 )
+text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+"
+autowrap = true
+script = ExtResource( 4 )
+
+[node name="btnSkip" type="Button" parent="."]
+margin_left = 872.922
+margin_top = 23.327
+margin_right = 998.922
+margin_bottom = 86.327
+custom_fonts/font = SubResource( 2 )
+text = "Pular"

@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
+[ext_resource path="res://probs/bg_menu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://probs/txt.tscn" type="PackedScene" id=3]
+[ext_resource path="res://probs/player_plane.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Fonts/Doubledecker DEMO.otf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 37
+font_data = SubResource( 3 )
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="bg" parent="." instance=ExtResource( 2 )]
+
+[node name="txt" parent="." instance=ExtResource( 3 )]
+
+[node name="btnjogar" type="Button" parent="."]
+margin_left = 428.0
+margin_top = 248.108
+margin_right = 634.0
+margin_bottom = 298.108
+rect_scale = Vector2( 1, 1.56 )
+custom_fonts/font = SubResource( 4 )
+text = " JOGAR"
+
+[node name="btnOpt" type="Button" parent="."]
+margin_left = 428.0
+margin_top = 355.0
+margin_right = 634.0
+margin_bottom = 405.0
+rect_scale = Vector2( 1, 1.56 )
+custom_fonts/font = SubResource( 4 )
+text = "Opções"
+
+[node name="btnSair" type="Button" parent="."]
+margin_left = 429.67
+margin_top = 465.0
+margin_right = 635.67
+margin_bottom = 515.0
+rect_scale = Vector2( 1, 1.56 )
+custom_fonts/font = SubResource( 4 )
+text = "Sair"
+
+[node name="player_plane" parent="." instance=ExtResource( 4 )]
+position = Vector2( 158.667, 227.145 )
+[connection signal="pressed" from="btnjogar" to="." method="_on_btnjogar_pressed"]
+[connection signal="pressed" from="btnOpt" to="." method="_on_btnOpt_pressed"]
+[connection signal="pressed" from="btnSair" to="." method="_on_btnSair_pressed"]
